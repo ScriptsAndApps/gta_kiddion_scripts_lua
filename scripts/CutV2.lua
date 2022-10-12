@@ -1,0 +1,211 @@
+local subb = menu.add_submenu("heist stuff like casino,cayo,dday,appertment")
+
+subb:add_action("kill casino cooldown (1.61)", function()
+	mpIndex = globals.get_int(1574918)
+	if mpIndex == 0 then
+		stats.set_int("MP0_H3_COMPLETEDPOSIX", 0)
+                stats.set_int("MP0_H3_COOLDOWN", 0)
+                stats.set_int("MP0_H3_COOLDOWN_HARD", 0)
+	else
+		stats.set_int("MP1_H3_COMPLETEDPOSIX", 0)
+                stats.set_int("MP1_H3_COOLDOWN", 0)
+                stats.set_int("MP1_H3_COOLDOWN_HARD", 0)
+	end
+end)
+
+
+
+	local function Text(text)
+		subb:add_action(text, function() end)
+    end
+	
+    Text("--------------Casino AI Cut--------------------")	
+	
+	subb:add_float_range("Lester %", 1.0, 0, 100, function() 
+    	return globals.get_int(262145 + 28289)
+    end, function(value)
+    	globals.set_int(262145 + 28289, value)
+    end)
+		
+	subb:add_toggle("Lester 0%", function()
+	    	return globals.get_int(262145 + 28289)
+    end, function(value)
+    	globals.set_int(262145 + 28289, 0)
+    end)
+	
+	subb:add_float_range("Chester McCoy %", 1.0, 0, 100, function() 
+    	return globals.get_int(262145 + 28318)
+    end, function(value)
+    	globals.set_int(262145 + 28318, value)
+    end)
+	
+	subb:add_toggle("Chester McCoy 0%", function()
+    	return globals.get_int(262145 + 28318)
+    end, function(value)
+    	globals.set_int(262145 + 28318, 0)
+    end)
+	
+	subb:add_float_range("Karim Denz %", 1.0, 0, 100, function() 
+    	return globals.get_int(262145 + 28320)
+    end, function(value)
+    	globals.set_int(262145 + 28320, value)
+    end)
+	
+	subb:add_toggle("Karim Denz 0%", function()
+    	return globals.get_int(262145 + 28320)
+    end, function(value)
+    	globals.set_int(262145 + 28320, 0)
+    end)
+	
+	subb:add_float_range("Avi Schwarzman %", 1.0, 0, 100, function() 
+    	return globals.get_int(262145 + 28328)
+    end, function(value)
+    	globals.set_int(262145 + 28328, value)
+    end)	
+	
+	subb:add_toggle("Avi Schwarzman 0%", function()
+    	return globals.get_int(262145 + 28328)
+    end, function(value)
+    	globals.set_int(262145 + 28328, 0)
+    end)
+
+    local function Text(text)
+	subb:add_action(text, function() end)
+end
+Text("--------------Casino Things--------------------")
+ 
+subb:add_int_range("Casino Player1 Cut", 5.0, 15, 100, function() 
+	return globals.get_int(1705839)
+end, function(value)
+	globals.set_int(1705839, value)
+end)
+ 
+subb:add_int_range("Casino Player2 Cut", 5.0, 15, 100, function() 
+	return globals.get_int(1705840)
+end, function(value)
+	globals.set_int(1705840, value)
+end)
+ 
+subb:add_int_range("Casino Player3 Cut", 5.0, 15, 100, function() 
+	return globals.get_int(1705841)
+end, function(value)
+	globals.set_int(1705841, value)
+end)
+ 
+subb:add_int_range("Casino Player4 Cut", 5.0, 15, 100, function() 
+	return globals.get_int(1705842)
+end, function(value)
+	globals.set_int(1705842, value)
+end)
+ 
+subb:add_int_range("Cash Potential", 100000.0, 2115000, 100000000, function() 
+	return globals.get_int(262145 + 28303)
+end, function(value)
+	globals.set_int(262145 + 28303, value)
+end)
+ 
+subb:add_int_range("Art Potential", 100000.0, 2350000, 100000000, function() 
+	return globals.get_int(262145 + 28304)
+end, function(value)
+	globals.set_int(262145 + 28304, value)
+end)
+ 
+subb:add_int_range("Gold Potential", 100000.0, 1580000, 100000000, function() 
+	return globals.get_int(262145 + 28305)
+end, function(value)
+	globals.set_int(262145 + 28305, value)
+end)
+ 
+subb:add_int_range("Diamond Potential", 100000.0, 3290000, 100000000, function() 
+	return globals.get_int(262145 + 28306)
+end, function(value)
+	globals.set_int(262145 + 28306, value)
+end)
+ 
+Text("--------------Cayo Things--------------------")
+subb:add_int_range("Cayo Player1", 5.0, 15, 100, function() 
+	return globals.get_int(1711169)
+end, function(value)
+	globals.set_int(1711169, value)
+end)
+ 
+subb:add_int_range("Cayo Player2", 5.0, 15, 100, function() 
+	return globals.get_int(1711170)
+end, function(value)
+	globals.set_int(1711170, value)
+end)
+ 
+subb:add_int_range("Cayo Player3", 5.0, 15, 100, function() 
+	return globals.get_int(1711171)
+end, function(value)
+	globals.set_int(1711171, value)
+end)
+ 
+subb:add_int_range("Cayo Player4", 5.0, 15, 100, function() 
+	return globals.get_int(1711172)
+end, function(value)
+	globals.set_int(1711172, value)
+end)
+ 
+subb:add_int_range("Cayo Bag Size", 500.0, 1800, 10000, function() 
+	return globals.get_int(291372)
+end, function(value)
+	globals.set_int(291372, value)
+end)
+ 
+Text("--------------Doomsday Things--------------------")
+subb:add_int_range("Doomsday Player1", 5.0, 15, 100, function() 
+	return globals.get_int(1700431)
+end, function(value)
+	globals.set_int(1700431, value)
+end)
+ 
+subb:add_int_range("Doomsday Player2", 5.0, 15, 100, function() 
+	return globals.get_int(1700432)
+end, function(value)
+	globals.set_int(1700432, value)
+end)
+ 
+subb:add_int_range("Doomsday Player3", 5.0, 15, 100, function() 
+	return globals.get_int(1700433)
+end, function(value)
+	globals.set_int(1700433, value)
+end)
+ 
+subb:add_int_range("Doomsday Player4", 5.0, 15, 100, function() 
+	return globals.get_int(1700434)
+end, function(value)
+	globals.set_int(1700434, value)
+end)
+ 
+Text("--------------Apartment Things--------------------")
+subb:add_int_range("Apt Player1", 5.0, 15, 100, function() 
+	return globals.get_int(1674782)
+end, function(value)
+	globals.set_int(1674782, value)
+end)
+ 
+subb:add_int_range("Apt Player2", 5.0, 15, 100, function() 
+	return globals.get_int(1674783)
+end, function(value)
+	globals.set_int(1674783, value)
+end)
+ 
+subb:add_int_range("Apt Player3", 5.0, 15, 100, function() 
+	return globals.get_int(1674784)
+end, function(value)
+	globals.set_int(1674784, value)
+end)
+ 
+subb:add_int_range("Apt Player4", 5.0, 15, 100, function() 
+	return globals.get_int(1674785)
+end, function(value)
+	globals.set_int(1674785, value)
+end)
+ 
+Text("--------------Autoshop Things--------------------")
+subb:add_int_range("Autoshop Job Money", 10000.0, 170000, 1000000, function() 
+	return globals.get_int(292668)
+end, function(value)
+	globals.set_int(292668, value)
+end)

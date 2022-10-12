@@ -1,0 +1,1 @@
+taskkill /f /im modest-menu_protected.exe

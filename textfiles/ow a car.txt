@@ -1,0 +1,21 @@
+Quote:
+Originally Posted by iCoExist View Post
+You need to go to Unlocks -> Unlock all vehicles
+
+Also, there's a neat trick to saving these spawned vehicles as owned so you can legit mod them in LSC.
+
+1. Unlock all vehicles (Unlocks -> Unlock all vehicles)
+2. Spawn DLC car
+3. Forge vehicle model (Vehicle -> Forge Model for LSC)
+4. Drive into LSC & keep menu open (Will show your car as Sentinel XS)
+5. Navigate to Loss & Theft Prevention
+6. Quickly disable Forge Model for LSC and immediately purchase Tracker, then Full Coverage (If done right you shouldn't get kicked out of LSC)
+7. Leave LSC & re-enter
+8. Customize & Profit?!
+
+This will work for most vehicles in game that can be purchased regularly. However, keep in mind that doing it this way may or may not save money, as you might see Full Coverage costs of over 500k. Also, for DLC vehicles that have not been released yet, you'll need to have Unlock all Vehicles on at all times to be able to drive them. Other players will be unable to drive or get into some of these vehicles. Also, if you exit a pre-release vehicle with other players near you, it will cause it to despawn as the game realizes that it shouldn't be there.
+This method worked for Sultan RS (super class) it has kept the real car in my garage, when i call mechanic, and use insurance. I can take it in and out of LSC. My insurance/tracker cost on Sultan RS was over 100k. But I got the car!
+
+Dope, method 100% working. Fully modded Comet SR 148k$ to insure.
+
+Some of my favorite Vehicles from vehicles.json (Copy/paste) into file.
